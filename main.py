@@ -3,8 +3,7 @@ import pandas as pd
 
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
-DATASET_PATH = ROOT_DIR / "retail_store_sales.csv"
-
+DATASET_PATH = Path(__file__).resolve().parent / "retail_store_sales.csv"
 
 def main():
     if not DATASET_PATH.exists():
